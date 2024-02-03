@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+}
+
+/* 
+-------------------------------------------nav section--------------------------------------- */
+
+#nav{
+    position: fixed;
+    top:0;
+    padding:2vh 2vw;
+    width:100vw;
+    height:20vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid black;
+}
+
+#nav-part-1{
+    width:10%;
+    height:50%;
+    border:1px solid black;
+}
+#nav-part-2{
+    width:40%;
+    height:50%;
+    border:1px solid black;
+}
+
+
+/* -----------------------------------------banner section------------------------------------------------ */
+
+#banner{
+    width:100vw;
+    height:81vh;
+    border:1px solid black;
+    margin-top: 20vh;
+}

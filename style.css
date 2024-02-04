@@ -1,19 +1,27 @@
+@font-face {
+    font-family: 'bookman'; 
+    src: url('fonts/Bookman Old Style Regular.ttf');
+    
+}
+  
+
+
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
+    box-sizing: content-box;
     font-family: "Roboto", sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* 
 -------------------------------------------nav section--------------------------------------- */
 
 #nav{
-    position: fixed;
+    /* position: fixed; */
     top:0;
     padding:2vh 2vw;
-    width:100vw;
+    width:100%;
     height:20vh;
     display:flex;
     justify-content: space-between;
@@ -36,8 +44,43 @@
 /* -----------------------------------------banner section------------------------------------------------ */
 
 #banner{
-    width:100vw;
-    height:81vh;
+    position: relative;
+    width:100%;
+    height:80vh;
     border:1px solid black;
-    margin-top: 20vh;
+    /* margin-top: 20vh; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#banner-title-div{
+    display:flex;
+    flex-direction: column;
+    /* gap: 5vh; */
+    /* height: 50%; */
+    align-items: center;
+}
+#banner-title{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 5vw;;
+    font-family: bookman;
+    line-height: 1.1;
+    font-weight: 300;
+    overflow: hidden;
+    
+
+}
+
+#underline{
+    width:45%;
+    background-image:url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    /* position: absolute; */
+    height: 3vh;
+    /* bottom: -5%; */
+    /* left:50%; */
+    background-size: cover;
+    /* transform: translate(-50%,0); */
 }
